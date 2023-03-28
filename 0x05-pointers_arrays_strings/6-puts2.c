@@ -1,29 +1,17 @@
 #include "main.h"
 /**
  * puts2 - prints strings
- * @str: input
- * Return: print
+ * @str: funtion parameter
+ * Return: 0
  */
-
 void puts2(char *str)
 {
-	int longi = 0;
-	int t = 0;
-	int o;
-	char *y = str;
+	int i;
 
-	while (*y != '\0')
+	for (i = 0 ; str[i] != '\0' ; i++)
 	{
-		y++;
-		longi++;
+		_putchar(str[i]);
+		i++;
 	}
-	t = longi - 1;
-	for (o = 0; o <= t; o++)
-	{
-		if (o % 2 == 0)
-	{
-		_putchar(str[o]);
-	}
-	}
-	Putchar('\n');
+	_putchar('\n');
 }
